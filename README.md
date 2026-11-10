@@ -72,6 +72,7 @@ These user parameters are reserved and can't be modified:
 - user_campaign_id
 - user_campaign_click_id
 - user_campaign_content
+- user_medium
 - user_campaign_term
 - user_device_type
 - user_country
@@ -112,6 +113,7 @@ These session parameters are reserved and can't be modified:
 - session_campaign_click_id
 - session_campaign_term
 - session_campaign_content
+- session_medium
 - session_device_type
 - session_country
 - session_city
@@ -210,6 +212,7 @@ These event parameters are reserved and can't be modified:
 - campaign_click_id
 - campaign_term
 - campaign_content
+- medium
 - user_agent
 - browser_name
 - browser_language
@@ -266,6 +269,7 @@ Change the URL query parameter names used to populate acquisition fields. The de
 | **Query parameter name for campaign click id** | `campaign_click_id` | `utm_click_id` |
 | **Query parameter name for campaign term** | `campaign_term` | `utm_term` |
 | **Query parameter name for campaign content** | `campaign_content` | `utm_content` |
+| **Query parameter name for medium** | `medium` | `utm_medium` |
 
 When the configured click ID is absent, the tracker checks these platform identifiers in order: `gclid`, `dclid`, `gclsrc`, `wbraid`, `gbraid`, `msclkid`, `fbclid`, `ttclid`, `twclid`, `epik`, `li_fat_id`, `scclid`.
 

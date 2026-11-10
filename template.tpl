@@ -105,6 +105,13 @@ ___TEMPLATE_PARAMETERS___
                   {
                     "type": "REGEX",
                     "args": [
+                      "^(?!user_medium$).*"
+                    ],
+                    "errorMessage": "Can\u0027t add user_medium parameter."
+                  },
+                  {
+                    "type": "REGEX",
+                    "args": [
                       "^(?!user_campaign_term$).*"
                     ],
                     "errorMessage": "Can\u0027t add user_campaign_term parameter."
@@ -206,7 +213,7 @@ ___TEMPLATE_PARAMETERS___
         ],
         "displayName": "User parameters",
         "alwaysInSummary": true,
-        "help": "Add user parameters to the request in user_data. If a parameter has the same name, it will be overridden.\n\u003cbr\u003e\u003cbr\u003e\nReserved user parameters: \u003cbr\u003e  \n• user_channel_grouping \u003cbr\u003e  \n• user_source \u003cbr\u003e  \n• user_tld_source \u003cbr\u003e  \n• user_campaign \u003cbr\u003e  \n• user_campaign_id \u003cbr\u003e  \n• user_campaign_click_id\u003cbr\u003e\n• user_campaign_content \u003cbr\u003e  \n• user_campaign_term \u003cbr\u003e  \n• user_device_type \u003cbr\u003e  \n• user_country \u003cbr\u003e  \n• user_language \u003cbr\u003e  \n• user_city \u003cbr\u003e\n• user_first_session_timestamp \u003cbr\u003e\n• user_last_session_timestamp \u003cbr\u003e\n• user_date \u003cbr\u003e\n• client_id",
+        "help": "Add user parameters to the request in user_data. If a parameter has the same name, it will be overridden.\n\u003cbr\u003e\u003cbr\u003e\nReserved user parameters: \u003cbr\u003e  \n• user_channel_grouping \u003cbr\u003e  \n• user_source \u003cbr\u003e  \n• user_tld_source \u003cbr\u003e  \n• user_campaign \u003cbr\u003e  \n• user_campaign_id \u003cbr\u003e  \n• user_campaign_click_id\u003cbr\u003e\n• user_campaign_content \u003cbr\u003e  \n• user_medium \u003cbr\u003e  \n• user_campaign_term \u003cbr\u003e  \n• user_device_type \u003cbr\u003e  \n• user_country \u003cbr\u003e  \n• user_language \u003cbr\u003e  \n• user_city \u003cbr\u003e\n• user_first_session_timestamp \u003cbr\u003e\n• user_last_session_timestamp \u003cbr\u003e\n• user_date \u003cbr\u003e\n• client_id",
         "defaultValue": false
       }
     ]
@@ -327,6 +334,13 @@ ___TEMPLATE_PARAMETERS___
                       "^(?!session_campaign_content$).*"
                     ],
                     "errorMessage": "Can\u0027t add session_campaign_content parameter."
+                  },
+                  {
+                    "type": "REGEX",
+                    "args": [
+                      "^(?!session_medium$).*"
+                    ],
+                    "errorMessage": "Can\u0027t add session_medium parameter."
                   },
                   {
                     "type": "REGEX",
@@ -503,7 +517,7 @@ ___TEMPLATE_PARAMETERS___
         ],
         "displayName": "",
         "alwaysInSummary": true,
-        "help": "Add session parameters to the request in session_data. If a parameter has the same name, it will be overridden.\n\u003cbr\u003e\u003cbr\u003e\nReserved session parameters: \u003cbr\u003e\n• user_id \u003cbr\u003e\n• session_number \u003cbr\u003e \n• cross_domain_session \u003cbr\u003e \n• session_channel_grouping \u003cbr\u003e \n• session_source \u003cbr\u003e \n• session_tld_source \u003cbr\u003e \n• session_campaign \u003cbr\u003e \n• session_campaign_id \u003cbr\u003e \n• session_campaign_click_id \u003cbr\u003e\n• session_campaign_content \u003cbr\u003e \n• session_campaign_term \u003cbr\u003e \n• session_device_type \u003cbr\u003e \n• session_city \u003cbr\u003e\n• session_country \u003cbr\u003e \n• session_language \u003cbr\u003e \n• session_hostname \u003cbr\u003e \n• session_browser_name \u003cbr\u003e \n• session_landing_page_category \u003cbr\u003e \n• session_landing_page_path \u003cbr\u003e \n• session_landing_page_title \u003cbr\u003e \n• session_exit_page_category \u003cbr\u003e \n• session_exit_page_path \u003cbr\u003e \n• session_exit_page_title \u003cbr\u003e \n• session_start_timestamp \u003cbr\u003e \n• session_end_timestamp \u003cbr\u003e\n• session_date \u003cbr\u003e\n• session_id \u003cbr\u003e\n• session_landing_page_url \u003cbr\u003e\n• session_exit_page_url",
+        "help": "Add session parameters to the request in session_data. If a parameter has the same name, it will be overridden.\n\u003cbr\u003e\u003cbr\u003e\nReserved session parameters: \u003cbr\u003e\n• user_id \u003cbr\u003e\n• session_number \u003cbr\u003e \n• cross_domain_session \u003cbr\u003e \n• session_channel_grouping \u003cbr\u003e \n• session_source \u003cbr\u003e \n• session_tld_source \u003cbr\u003e \n• session_campaign \u003cbr\u003e \n• session_campaign_id \u003cbr\u003e \n• session_campaign_click_id \u003cbr\u003e\n• session_campaign_content \u003cbr\u003e \n• session_medium \u003cbr\u003e \n• session_campaign_term \u003cbr\u003e \n• session_device_type \u003cbr\u003e \n• session_city \u003cbr\u003e\n• session_country \u003cbr\u003e \n• session_language \u003cbr\u003e \n• session_hostname \u003cbr\u003e \n• session_browser_name \u003cbr\u003e \n• session_landing_page_category \u003cbr\u003e \n• session_landing_page_path \u003cbr\u003e \n• session_landing_page_title \u003cbr\u003e \n• session_exit_page_category \u003cbr\u003e \n• session_exit_page_path \u003cbr\u003e \n• session_exit_page_title \u003cbr\u003e \n• session_start_timestamp \u003cbr\u003e \n• session_end_timestamp \u003cbr\u003e\n• session_date \u003cbr\u003e\n• session_id \u003cbr\u003e\n• session_landing_page_url \u003cbr\u003e\n• session_exit_page_url",
         "defaultValue": false
       }
     ]
@@ -873,6 +887,13 @@ ___TEMPLATE_PARAMETERS___
                   {
                     "type": "REGEX",
                     "args": [
+                      "^(?!medium$).*"
+                    ],
+                    "errorMessage": "Can\u0027t add medium parameter."
+                  },
+                  {
+                    "type": "REGEX",
+                    "args": [
                       "^(?!user_agent$).*"
                     ],
                     "errorMessage": "Can\u0027t add user_agent parameter."
@@ -1003,7 +1024,7 @@ ___TEMPLATE_PARAMETERS___
         ],
         "displayName": "Shared event parameters",
         "alwaysInSummary": true,
-        "help": "Add shared event parameters to the request in event_data. If a parameter has the same name, it will be overridden.\n\u003cbr\u003e\u003cbr\u003e\nReserved event parameters: \u003cbr\u003e \n• event_type \u003cbr\u003e \n• channel_grouping \u003cbr\u003e \n• source \u003cbr\u003e \n• tld_source \u003cbr\u003e\n• campaign \u003cbr\u003e \n• campaign_id \u003cbr\u003e\n• campaign_click_id \u003cbr\u003e\n• campaign_term \u003cbr\u003e \n• campaign_content \u003cbr\u003e \n• user_agent \u003cbr\u003e \n• browser_name \u003cbr\u003e \n• browser_language \u003cbr\u003e \n• browser_version \u003cbr\u003e \n• device_type \u003cbr\u003e \n• device_vendor \u003cbr\u003e \n• device_model \u003cbr\u003e \n• os_name \u003cbr\u003e \n• os_version \u003cbr\u003e \n• screen_size \u003cbr\u003e \n• viewport_size \u003cbr\u003e\n• city \u003cbr\u003e\n• country \u003cbr\u003e\n• cross_domain_id",
+        "help": "Add shared event parameters to the request in event_data. If a parameter has the same name, it will be overridden.\n\u003cbr\u003e\u003cbr\u003e\nReserved event parameters: \u003cbr\u003e \n• event_type \u003cbr\u003e \n• channel_grouping \u003cbr\u003e \n• source \u003cbr\u003e \n• tld_source \u003cbr\u003e\n• campaign \u003cbr\u003e \n• campaign_id \u003cbr\u003e\n• campaign_click_id \u003cbr\u003e\n• campaign_term \u003cbr\u003e \n• campaign_content \u003cbr\u003e \n• medium \u003cbr\u003e \n• user_agent \u003cbr\u003e \n• browser_name \u003cbr\u003e \n• browser_language \u003cbr\u003e \n• browser_version \u003cbr\u003e \n• device_type \u003cbr\u003e \n• device_vendor \u003cbr\u003e \n• device_model \u003cbr\u003e \n• os_name \u003cbr\u003e \n• os_version \u003cbr\u003e \n• screen_size \u003cbr\u003e \n• viewport_size \u003cbr\u003e\n• city \u003cbr\u003e\n• country \u003cbr\u003e\n• cross_domain_id",
         "defaultValue": false
       }
     ]
@@ -1137,7 +1158,7 @@ ___TEMPLATE_PARAMETERS___
         "name": "set_custom_utm_parameters_names",
         "checkboxText": "Override default acquisition parameters",
         "simpleValueType": true,
-        "help": "Override the URL query parameter names used for acquisition. Defaults: source \u003d utm_source, campaign \u003d utm_campaign, campaign_id \u003d utm_id, campaign_click_id \u003d utm_click_id, campaign_term \u003d utm_term, campaign_content \u003d utm_content.",
+        "help": "Override the URL query parameter names used for acquisition. Defaults: source \u003d utm_source, campaign \u003d utm_campaign, campaign_id \u003d utm_id, campaign_click_id \u003d utm_click_id, campaign_term \u003d utm_term, campaign_content \u003d utm_content, medium \u003d utm_medium.",
         "displayName": "",
         "defaultValue": false,
         "alwaysInSummary": true,
@@ -1169,6 +1190,31 @@ ___TEMPLATE_PARAMETERS___
             ],
             "defaultValue": "",
             "valueHint": "(not set)"
+          },
+          {
+            "type": "TEXT",
+            "name": "custom_medium_name",
+            "displayName": "Query parameter name for medium",
+            "simpleValueType": true,
+            "alwaysInSummary": true,
+            "enablingConditions": [
+              {
+                "paramName": "set_custom_utm_parameters_names",
+                "paramValue": true,
+                "type": "EQUALS"
+              }
+            ],
+            "valueValidators": [
+              {
+                "type": "REGEX",
+                "args": [
+                  "^(?!utm_medium$).*"
+                ],
+                "errorMessage": "Query parameter name can\u0027t be equal to utm_medium."
+              }
+            ],
+            "valueHint": "(not set)",
+            "defaultValue": ""
           },
           {
             "type": "TEXT",
